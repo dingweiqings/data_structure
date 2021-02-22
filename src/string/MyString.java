@@ -124,6 +124,7 @@ public final class MyString implements Comparable<MyString>, Serializable {
 	}
 
 	// 从指定位置开始寻找并返回第一次与指定字符串模式匹配的位置
+	//移动j个，则下个比较位置i-j+1+1,但数组下标是0
 	public int indexOf(MyString pattern, int begin) {
 		if (pattern != null && pattern.length() > 0
 				&& this.length() >= pattern.length()) {
@@ -170,6 +171,9 @@ public final class MyString implements Comparable<MyString>, Serializable {
 	}
 
 	// KMP模式匹配算法
+	//next[j]
+
+
 	public static int indexOf(String target, String pattern, int begin) {
 		if (target != null && pattern != null && pattern.length() > 0
 				&& target.length() >= pattern.length()) {

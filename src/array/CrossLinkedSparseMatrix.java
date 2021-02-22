@@ -8,8 +8,8 @@ public class CrossLinkedSparseMatrix {
 	private int rows, columns;// 矩阵的行数和列数
 	private CrossNode[] rowheads, columnshead;// 行指针数组和列指针数组，元素类型是十字链表节点
 
-	
-	
+
+
 	//
 	public CrossLinkedSparseMatrix(int rows, int columns) {// 构造rows行columns列零矩阵
 		if (rows <= 0 || columns <= 0)
